@@ -24,17 +24,16 @@ break | ends for-loop, same as in go
 def | define function, 'func' in go
 lambda | define ananonymous function, ```lambda input:output```
 return | ends function and returns result to caller, like in go
-
-with | 
-assert | 
-pass | 
+with | with block ensures clean-up code to be run, use for example to open files
+assert | if condition is false, return assertionError ```assert condition, assertionError``` run python with ```-o``` (optimized) to disable all assertions
+pass | empty method or function, placeholder until written
+try | 
 except |
 class |
 exec | 
 raise | 
 finally | 
 is |
-try |
 
 
 ## generators
@@ -66,4 +65,32 @@ def stringIterator(str):
   
   
   ## condition
+  
+  ## error handling
+  errors can be handled in with ```try``` ```except``` ```else``` and ```finally``` keywords
+  ```py
+  try:
+    condition
+  except:
+    print("Error was raised")
+  else: 
+    print("Everything worked")
+  finally:
+    print("Execute me no matter what")
+ ```
+ the ```try``` is stating the condition, if error is raised, ```except``` is executed, no error leads to execution of ```else``` block, ```finally``` will be executed under all circumstances
+ 
+ ```py
+ try:
+  condition
+ except errorType1:
+  # handle errorType1
+ except errorType2:
+  # handle errorType2
+ except errorType3:
+  # handle errorType3 
+ except:
+  # handle all other errorTypes
+ ```
+ exceptions can selectively catch errors, or all errors depended on syntax
   
