@@ -37,6 +37,8 @@ exec | executes python code, sounds weird, but can be used for example to run sc
 
 ## data types
 
+type | description
+--- | ---
 True | boolean true
 False | boolean false
 None | null variable (null pointer)
