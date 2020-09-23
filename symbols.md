@@ -15,7 +15,7 @@ yield | returns generator object that behaves like iterator
 yield from | with yield statement build generator using iterator ``` yield from <iterator>```
 if | starts the 'if' statement ```if condition == True:```
 elif | adds a second conditional statement ```elif == True```
-else | adds a unconditional conditional statement
+else | adds a unconditional conditional statement, in error handling block executed if no error was raised
 while | starts a while loop ```while condition == True:```
 for | starts loop over iterator ```for elementX in interatorY:```
 in | used to state iterator in for-loop and to check if element is found in array
@@ -27,12 +27,13 @@ return | ends function and returns result to caller, like in go
 with | with block ensures clean-up code to be run, use for example to open files
 assert | if condition is false, return assertionError ```assert condition, assertionError``` run python with ```-o``` (optimized) to disable all assertions
 pass | empty method or function, placeholder until written
-try | 
-except |
+try | starts error handling block, contains block of code that could cause error
+except | if error is raised, except statement is executed, can be specified for particlar error
+finally | executed after error handling block, regardless of error
+raise | raise an error / exception, must state valid error type
+
 class |
 exec | 
-raise | 
-finally | 
 is |
 
 
