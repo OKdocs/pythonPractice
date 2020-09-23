@@ -35,3 +35,19 @@ finally | executed after error handling block, regardless of error
 raise | raise an error / exception, must state valid error type
 exec | executes python code, sounds weird, but can be used for example to run scripts
 
+## data types
+
+True | boolean true
+False | boolean false
+None | null variable (null pointer)
+strings | arrays of bytes representing unicode
+numbers | integers have no dot ```x=5``` is integer
+floats | floats have dot ```x=5.0``` is float
+complex | complex numbers created with function call ```x=complex(5,0)```  
+
+collection | ordering and duplicates | changeability (mutable)
+--- | --- | ---
+lists | ordered and duplicates | changeable
+tuples | ordered and duplicates | unchangeable
+set | unordered (no index) no duplicates | changeable
+dictionary | unordered (index) no duplicates | changeable
