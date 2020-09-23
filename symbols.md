@@ -7,6 +7,7 @@ word | purpose
 and | regular logical 'and' operator '&&' in go
 or | regular logical 'or' operator '||' in go
 not | logical 'not' operator like '!=' in go
+is | test is two objects are the same, different from '==' that test if they are equal
 del | delete / remove object or variable from memory
 from | used for imports from file from relative path ```from .moduleY import functionY as aliasX```
 import | import package 
@@ -21,6 +22,7 @@ for | starts loop over iterator ```for elementX in interatorY:```
 in | used to state iterator in for-loop and to check if element is found in array
 continue | ends current and continues with next iteration in for-loop, same as in go
 break | ends for-loop, same as in go
+class | defines a class
 def | define function, 'func' in go
 lambda | define ananonymous function, ```lambda input:output```
 return | ends function and returns result to caller, like in go
@@ -31,10 +33,7 @@ try | starts error handling block, contains block of code that could cause error
 except | if error is raised, except statement is executed, can be specified for particlar error
 finally | executed after error handling block, regardless of error
 raise | raise an error / exception, must state valid error type
-
-class |
-exec | 
-is |
+exec | executes python code, sounds weird, but can be used for example to run scripts
 
 
 ## generators
