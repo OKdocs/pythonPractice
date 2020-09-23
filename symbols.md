@@ -51,5 +51,7 @@ collection | ordering and duplicates | changeability (mutable)
 --- | --- | ---
 lists | ordered and duplicates | changeable
 tuples | ordered and duplicates | unchangeable
-set | unordered (no index) no duplicates | changeable
-dictionary | unordered (index) no duplicates | changeable
+set | unordered no duplicates | changeable
+dictionary | unordered no duplicates | changeable
+
+**dictionaries** are key:value stores while **sets** only store keys 
