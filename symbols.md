@@ -55,3 +55,40 @@ set | unordered no duplicates | changeable
 dictionary | unordered no duplicates | changeable
 
 **dictionaries** are key:value stores while **sets** only store keys 
+
+## string escape sequences
+
+escape sequence | effect
+--- | ---
+\\ | \
+\' | '
+\" | "
+\a | bell (makes sound)
+\b | backspace (delete last character)
+\f | formfeed: start new line and continue writing where last line ended
+\n | new line
+\r | restart writing at the start of current line, overwrites old text
+\t | tab
+\v | vertigal tab: looks to me like formfeed
+
+## string formats
+
+symbol | format
+--- | ---
+%d | decimal integer (preferred)
+%i | decimal integer (use d instead)
+%o | octol integer
+%u | 
+%x |
+%X | 
+%e |
+%E |
+%f |
+%F |
+%g |
+%G |
+%c | character
+%r |
+%s | string
+%% |
+
