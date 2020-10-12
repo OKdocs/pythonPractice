@@ -113,10 +113,10 @@ symbol | effect
 () | function calls and tuples
 [] | lists
 {} | dictionary {key:value} & set {value}
-@ | 
-, |
-: |
-. |
+@ | **don't know yet**
+, | separates items in collections
+: | starts new code block (for, if, def)
+. | makes numbers floats
 = | assignment operator
 ; | end statement/expression
 += | add to variable
