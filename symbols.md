@@ -47,14 +47,13 @@ numbers | integers have no dot ```x=5``` is integer
 floats | floats have dot ```x=5.0``` is float
 complex | complex numbers created with function call ```x=complex(5,0)```  
 
-collection | ordering and duplicates | changeability (mutable)
+collection | ordering and duplicates | changeability (mutable) | key:value
 --- | --- | ---
-lists | ordered and duplicates | changeable
-tuples | ordered and duplicates | unchangeable
-set | unordered no duplicates | changeable
-dictionary | unordered no duplicates | changeable
+lists | ordered and duplicates | changeable | key
+tuples | ordered and duplicates | unchangeable | key
+set | unordered no duplicates | changeable | key
+dictionary | unordered no duplicates | changeable | key:value
 
-**dictionaries** are key:value stores while **sets** only store keys 
 
 ## string escape sequences
 
@@ -72,23 +71,24 @@ escape sequence | effect
 \v | vertigal tab: looks to me like formfeed
 
 ## string formats
+more info https://docs.python.org/3.4/library/string.html
 
 symbol | format
 --- | ---
 %d | decimal integer (preferred)
 %i | decimal integer (use d instead)
-%o | octol integer
-%u | 
-%x |
-%X | 
-%e |
-%E |
-%f |
-%F |
-%g |
-%G |
-%c | character
-%r |
+%o | octol integer (base 8)
+%u | decimal integer, not listed in docs (mysterious)
+%x | hex integer (base 16, lowercase letters)
+%X | hex integer (base 16, uppercase letters)
+%e | scientific exponent notation (lowercase 'e')
+%E | scientific exponent notation (uppercase 'E')
+%f | fixed point, can include %.2f to limit numbers after '.'
+%F | fixed point, but "NAN" and "INF" in uppercase
+%g | general format: depended on value calls fixed point(%f) or scientific format(%e) 
+%G | general format, but "NAN","INF" and "E" instead of lowercase equivalents
+%c | character, converts integers to unicode if necessary
+%r | prints what ever it reads as string, even '\r' and other formating comands
 %s | string
-%% |
+%% | percentage: multiplies by 100 calls %f and adds "%" at the end 
 
