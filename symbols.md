@@ -96,33 +96,33 @@ symbol | format
 
 symbol | effect
 --- | ---
-+ | addition
-- | subtraction
-* | multiplication
-** | exponentiation (to the power of)
-/ | division
-// | division and floor result (stays integer)
-% | remainder
-< | lesser/smaller than
-> | bigger than
-<= | lesser/smaller or equal 
->= | bigger or equal
-== | equal
-!= | not equal
-<> | not equal (removed in python3)
-() | function calls and tuples
-[] | lists
-{} | dictionary {key:value} & set {value}
-@ | **don't know yet**
-, | separates items in collections
-: | starts new code block (for, if, def)
-. | makes numbers floats
-= | assignment operator
-; | end statement/expression
-+= | add to variable
--= | subtract from variable
-\*= | multiply variable
-/= | divide variable
-//= | divide and floor variable
-%= | divide and assign remainder to variable
-\*\*= | exponantiate variable
+| + | addition
+| - | subtraction
+| \* | multiplication
+| \*\* | exponentiation (to the power of)
+| / | division
+| // | division and floor result (stays integer)
+| % | remainder
+| < | lesser/smaller than
+| > | bigger than
+| <= | lesser/smaller or equal 
+| >= | bigger or equal
+| == | equal
+| != | not equal
+| <> | not equal (removed in python3)
+| () | function calls and tuples
+| [] | lists
+| {} | dictionary {key:value} & set {value}
+| @ | **don't know yet**
+| , | separates items in collections
+| : | starts new code block (for, if, def)
+| . | makes numbers floats
+| = | assignment operator
+| ; | end statement/expression
+| += | add to variable
+| -= | subtract from variable
+| \*= | multiply variable
+| /= | divide variable
+| //= | divide and floor variable
+| %= | divide and assign remainder to variable
+| \*\*= | exponantiate variable
