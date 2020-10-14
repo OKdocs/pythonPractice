@@ -48,7 +48,7 @@ floats | floats have dot ```x=5.0``` is float
 complex | complex numbers created with function call ```x=complex(5,0)```  
 
 collection | ordering and duplicates | changeability (mutable) | key:value
---- | --- | ---
+--- | --- | --- | ---
 lists | ordered and duplicates | changeable | key
 tuples | ordered and duplicates | unchangeable | key
 set | unordered no duplicates | changeable | key
