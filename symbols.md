@@ -113,7 +113,7 @@ symbol | effect
 | () | function calls and tuples
 | [] | lists
 | {} | dictionary {key:value} & set {value}
-| @ | **don't know yet**
+| @ | decoration: complicated, see ideomatic
 | , | separates items in collections
 | : | starts new code block (for, if, def)
 | . | makes numbers floats
@@ -126,3 +126,15 @@ symbol | effect
 | //= | divide and floor variable
 | %= | divide and assign remainder to variable
 | \*\*= | exponantiate variable
+
+## naming conventions
+leading and trailing underscores around variable and function names names
+
+type | example | usage / meaning
+--- | --- | ---
+single leading underscore | \_name | naming convention for private variables and functions, no functional change
+double leading underscores |\_\_name | invokes "name mangeling" in classes to avoid name conflicts with subclasses
+single trailing underscore | name_ | naming convention to avoid conflicts with reserved key words
+double leading and trailing underscores| \_\_name__  | documented objects, use just as explained in [docs](https://docs.python.org/3/reference/datamodel.html#special-method-names "python docs, section 3. Data Modeling)
+
+**name mangleing** a variable \_\_var_name in class class_name gets renamed by the interpreter to  \_class_name__variable_name to avoid name conflicts with subclasses
