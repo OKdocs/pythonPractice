@@ -136,5 +136,6 @@ single leading underscore | \_name | naming convention for private variables and
 double leading underscores |\_\_name | invokes "name mangeling" in classes to avoid name conflicts with subclasses
 single trailing underscore | name_ | naming convention to avoid conflicts with reserved key words
 double leading and trailing underscores| \_\_name__  | documented objects, use just as explained in [docs](https://docs.python.org/3/reference/datamodel.html#special-method-names "python docs, section 3. Data Modeling")
+single underscore | _ | valid variable name, used to indicate insignificant temporary variables
 
 **name mangleing** a variable \_\_var_name in class class_name gets renamed by the interpreter to  \_class_name__variable_name to avoid name conflicts with subclasses
