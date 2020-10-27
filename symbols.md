@@ -54,6 +54,7 @@ tuples | ordered and duplicates | unchangeable | key
 set | unordered no duplicates | changeable | key
 dictionary | unordered no duplicates | changeable | key:value
 
+lists can be indexed from the back by using negative numbers like ```list[-1]```
 
 ## string escape sequences
 
