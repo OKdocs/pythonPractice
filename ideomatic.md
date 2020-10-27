@@ -1,11 +1,4 @@
 
-## generators
-are smaller than arrays or similar things but can also function as iterators, decrease iterator size
-```py
-def stringIterator(str):
-  yield from str
-```
-  will return iterator (works like array of chars, but can be much smaller, particularly if it is math)
   ## loops
   ### for in loop
   python style loop requires an iterator, loop loops over all elements of the iterator
@@ -26,9 +19,33 @@ def stringIterator(str):
  ```
   ### while loop
   
+  while loops iterate over a code block while the test condition is true
+  ```py
+  while condition_true:
+    do stuff
+  ```
+  everything is considered ```True``` execpt for ```False```, ```None``` and ```0``` 
+### iteration control
+  ```break``` and ```continue``` statements exists like in other languages
+### iterators
+```range```
+
+```reversed```
+
+#### generators
+are smaller than arrays or similar things but can also function as iterators, decrease iterator size
+```py
+def stringIterator(str):
+  yield from str
+```
+  will return iterator (works like array of chars, but can be much smaller, particularly if it is math)
+## condition
   
-  ## condition
-  
+  three statements handle conditions in python:
+  + if
+  + elif
+  + else
+
   ## error handling
   errors can be handled in with ```try``` ```except``` ```else``` and ```finally``` keywords
   ```py
@@ -57,3 +74,13 @@ def stringIterator(str):
  ```
  exceptions can selectively catch errors, or all errors depended on syntax
   
+ ## defining functions
+ ```def```
+ 
+ ### arguments
+ 
+ ```*arg```
+ variable amount of arguments, similar to passing an list
+ ```**kvargs```
+ variable amount of key:value arguments, similar to passing a dictionary
+ 
