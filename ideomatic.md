@@ -32,6 +32,8 @@
 
 ```reversed```
 
+```enumerate```
+
 #### generators
 are smaller than arrays or similar things but can also function as iterators, decrease iterator size
 ```py
