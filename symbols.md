@@ -34,6 +34,7 @@ except | if error is raised, except statement is executed, can be specified for 
 finally | executed after error handling block, regardless of error
 raise | raise an error / exception, must state valid error type
 exec | executes python code, sounds weird, but can be used for example to run scripts
+map | executes function on all elements of a list like map(func,list)
 
 ## data types
 
